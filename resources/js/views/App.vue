@@ -1,14 +1,18 @@
 <template>
     <div>
+        <HeaderComponent />
         <MainComponent />
     </div>
 </template>
 
 <script>
-import MainComponent from '../components/Main.vue'
+import MainComponent from '../components/MainComponent.vue';
+import HeaderComponent from '../components/HeaderComponent.vue'
+
 export default {
     components: {
         MainComponent,
+        HeaderComponent
     },
     
 }
