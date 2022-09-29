@@ -1,10 +1,21 @@
 <template>
-    <div></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <MainComponent />>
+                
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-export default {
+import MainComponent from '../components/MainComponent.vue';
 
+export default {
+    components:{
+        MainComponent,
+    }
 }
 </script>
 

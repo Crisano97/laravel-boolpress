@@ -2027,7 +2027,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony import */ var _components_MainComponent_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/MainComponent.vue */ "./resources/js/components/MainComponent.vue");
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    MainComponent: _components_MainComponent_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
 
 /***/ }),
 
@@ -2040,14 +2046,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_MainComponent_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/MainComponent.vue */ "./resources/js/components/MainComponent.vue");
-/* harmony import */ var _components_HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/HeaderComponent.vue */ "./resources/js/components/HeaderComponent.vue");
-
+/* harmony import */ var _components_HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/HeaderComponent.vue */ "./resources/js/components/HeaderComponent.vue");
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    MainComponent: _components_MainComponent_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    HeaderComponent: _components_HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    HeaderComponent: _components_HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
 
@@ -2068,23 +2071,40 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
+  return _c("header", [_c("nav", {
+    staticClass: "navbar navbar-expand-lg bg-light"
+  }, [_c("div", {
+    staticClass: "container-fluid"
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
+    staticClass: "collapse navbar-collapse",
+    attrs: {
+      id: "navbarNavAltMarkup"
+    }
+  }, [_c("div", {
+    staticClass: "navbar-nav"
+  }, [_c("router-link", {
+    staticClass: "nav-link active",
+    attrs: {
+      to: "/"
+    }
+  }, [_vm._v("Home")]), _vm._v(" "), _c("router-link", {
+    staticClass: "nav-link active",
+    attrs: {
+      to: "/about"
+    }
+  }, [_vm._v("About us")]), _vm._v(" "), _c("router-link", {
+    staticClass: "nav-link active",
+    attrs: {
+      to: "/contacts"
+    }
+  }, [_vm._v("Contact us")])], 1)])])])]);
 };
 
 var staticRenderFns = [function () {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("header", [_c("nav", {
-    staticClass: "navbar navbar-expand-lg bg-light"
-  }, [_c("div", {
-    staticClass: "container-fluid"
-  }, [_c("a", {
-    staticClass: "navbar-brand",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("Navbar")]), _vm._v(" "), _c("button", {
+  return _c("button", {
     staticClass: "navbar-toggler",
     attrs: {
       type: "button",
@@ -2096,32 +2116,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("span", {
     staticClass: "navbar-toggler-icon"
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "collapse navbar-collapse",
-    attrs: {
-      id: "navbarNavAltMarkup"
-    }
-  }, [_c("div", {
-    staticClass: "navbar-nav"
-  }, [_c("a", {
-    staticClass: "nav-link active",
-    attrs: {
-      "aria-current": "page",
-      href: "#"
-    }
-  }, [_vm._v("Home")]), _vm._v(" "), _c("a", {
-    staticClass: "nav-link",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("Features")]), _vm._v(" "), _c("a", {
-    staticClass: "nav-link",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("Pricing")]), _vm._v(" "), _c("a", {
-    staticClass: "nav-link disabled"
-  }, [_vm._v("Disabled")])])])])])]);
+  })]);
 }];
 render._withStripped = true;
 
@@ -2246,10 +2241,21 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div");
+  return _vm._m(0);
 };
 
-var staticRenderFns = [];
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "container"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h1", [_vm._v("We are very funny")])])])]);
+}];
 render._withStripped = true;
 
 
@@ -2270,10 +2276,21 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div");
+  return _vm._m(0);
 };
 
-var staticRenderFns = [];
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "container"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h1", [_vm._v("Contact Us")]), _vm._v(" "), _c("ul", [_c("li", [_vm._v("\n                    John : 33333333333\n                ")]), _vm._v(" "), _c("li", [_vm._v("\n                    John : 33333333333\n                ")])])])])]);
+}];
 render._withStripped = true;
 
 
@@ -2294,7 +2311,13 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div");
+  return _c("div", {
+    staticClass: "container"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("MainComponent"), _vm._v(">\n            \n        ")], 1)])]);
 };
 
 var staticRenderFns = [];
@@ -2318,7 +2341,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_c("HeaderComponent"), _vm._v(" "), _c("MainComponent")], 1);
+  return _c("div", [_c("HeaderComponent"), _vm._v(" "), _c("router-view")], 1);
 };
 
 var staticRenderFns = [];
@@ -18544,10 +18567,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _views_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/App */ "./resources/js/views/App.vue");
 /* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./router */ "./resources/js/router.js");
-
-
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+
 
 
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
@@ -18785,7 +18808,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
-  mode: history,
+  mode: 'history',
   routes: [{
     path: '/',
     name: 'home',

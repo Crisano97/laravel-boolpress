@@ -5,7 +5,7 @@ import ContactsPage from './pages/ContactsPage';
 import HomePage from './pages/HomePage';
 
 const router = new VueRouter({
-    mode: history,
+    mode: 'history',
     routes: [
         {
             path: '/',
