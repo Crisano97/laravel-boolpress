@@ -2,7 +2,8 @@
     <main class="container">
         <div class="row">
             <div class="col-12">
-                <div class="posts">
+                <MainLoader v-if="isLoading"/>
+                <div v-else class="posts">
                     <PostCard :key="post.id" :post="post"/>
                 </div>
             </div>
@@ -11,17 +12,21 @@
 </template>
 
 <script>
-import PostCard from '../components/PostCard.vue'
+import PostCard from '../components/PostCard.vue';
+import MainLoader from '../components/MainLoader.vue';
+
 import axios from 'axios';
 
 export default {
     components: {
         PostCard,
+        MainLoader
     },
     data: function(){
         return{
             post: {},
             categories: [],
+            isLoading: true
         }
     },
     methods: {
@@ -31,6 +36,7 @@ export default {
             axios.get(`/api/posts/${id}`).then((response) =>{
                 this.post = response.data.results;
                 console.warn( response.data.results);
+                this.isLoading = false;
             }).catch((error) =>{
                 console.error(error.message);
             })
