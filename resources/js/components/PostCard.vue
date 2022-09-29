@@ -42,7 +42,9 @@ export default {
         } 
     },
 
-    props: ['post'],
+    props: {
+        'post' : Object,
+    },
     
     methods:{
         toggle(index){
