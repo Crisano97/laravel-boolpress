@@ -66,7 +66,7 @@ export default {
     
     div.category-hover{
         font-size: 1.5rem;
-
+        cursor: pointer;
         // div.relative-posts{
         //     display: none;
         // }

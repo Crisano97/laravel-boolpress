@@ -2448,7 +2448,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "div.category-hover[data-v-1324358a] {\n  font-size: 1.5rem;\n}\ndiv.category-hover div.relative-posts[data-v-1324358a] {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  border: 1px solid black;\n  position: absolute;\n  background-color: white;\n}", ""]);
+exports.push([module.i, "div.category-hover[data-v-1324358a] {\n  font-size: 1.5rem;\n  cursor: pointer;\n}\ndiv.category-hover div.relative-posts[data-v-1324358a] {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n  border: 1px solid black;\n  position: absolute;\n  background-color: white;\n}", ""]);
 
 // exports
 

@@ -65,12 +65,16 @@ class PostController extends Controller
         // ]);
 
         $post = Post::with('category', 'user')->find($id);
+        if (substr($post->post_image, 0, 4) != 'http') {
+            $post->post_image = '/storage/' . $post->post_image;
+        }
         if ($post) {
             return response()->json([
                 'response' => true,
                 'results' => $post
             ]);
         }
+        
         else return response('', 404);
     }
 
