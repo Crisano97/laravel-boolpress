@@ -1975,7 +1975,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   props: {
-    'post': Object
+    post: Object
   },
   methods: {
     toggle: function toggle(index) {
@@ -2142,12 +2142,7 @@ var render = function render() {
     attrs: {
       to: "/contacts"
     }
-  }, [_vm._v("Contact us")]), _vm._v(" "), _c("router-link", {
-    staticClass: "nav-link active",
-    attrs: {
-      to: "/posts/2"
-    }
-  }, [_vm._v("Post 2")])], 1)])])])]);
+  }, [_vm._v("Contact us")])], 1)])])])]);
 };
 
 var staticRenderFns = [function () {
@@ -2235,7 +2230,11 @@ var render = function render() {
     }
   }, [_c("h3", {
     staticClass: "card-title m-3 font-weight-bold"
-  }, [_vm._v("\n            " + _vm._s(_vm.post.title) + "\n        ")]), _vm._v(" "), _c("h6", {
+  }, [_c("router-link", {
+    attrs: {
+      to: "/posts/" + _vm.post.id
+    }
+  }, [_vm._v("\n                " + _vm._s(_vm.post.title) + "\n            ")])], 1), _vm._v(" "), _c("h6", {
     staticClass: "card-subtitle m-3 text-secondary"
   }, [_vm._v("\n            " + _vm._s(_vm.post.user.name) + " | " + _vm._s(_vm.post.post_date) + "\n        ")]), _vm._v(" "), _vm.post.category != null ? _c("div", {
     staticClass: "badge text-white p-2 m-3 category-hover",

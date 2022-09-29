@@ -2,7 +2,9 @@
     <div class="card p-4 m-4">
         <div clas="card-body">
             <h3 class="card-title m-3 font-weight-bold">
-                {{ post.title }}
+                <router-link :to="'/posts/' + post.id">
+                    {{ post.title }}
+                </router-link>
             </h3>
             <h6 class="card-subtitle m-3 text-secondary">
                 {{ post.user.name }} | {{ post.post_date }}
@@ -43,7 +45,7 @@ export default {
     },
 
     props: {
-        'post' : Object,
+        post: Object
     },
     
     methods:{

@@ -64,7 +64,7 @@ class PostController extends Controller
         //     'results' =>['data' => $post]
         // ]);
 
-        $post = Post::with('category')->find($id);
+        $post = Post::with('category', 'user')->find($id);
         if ($post) {
             return response()->json([
                 'response' => true,

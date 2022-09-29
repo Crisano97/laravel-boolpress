@@ -14,10 +14,6 @@
 
                     <!-- <a class="nav-link" href="#">Contacts</a> -->
                     <router-link class="nav-link active" to="/contacts">Contact us</router-link>
-                    
-                    <router-link class="nav-link active" to="/posts/2">Post 2</router-link>
-
-
                 </div>
                 </div>
             </div>
