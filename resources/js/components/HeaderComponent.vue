@@ -7,12 +7,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
                     <router-link class="nav-link active" to="/">Home</router-link>
-                    <!-- <a class="nav-link" href="#">About</a> -->
                     <router-link class="nav-link active" to="/about">About us</router-link>
-
-                    <!-- <a class="nav-link" href="#">Contacts</a> -->
                     <router-link class="nav-link active" to="/contacts">Contact us</router-link>
                 </div>
                 </div>
