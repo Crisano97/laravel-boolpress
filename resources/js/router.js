@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import SinglePost from './pages/SinglePost';
 import CategoriesIndexPage from './pages/CategoriesIndexPage';
 import CategoryPostsList from './pages/CategoryPostsList';
+import SearchPostsPage from './pages/SearchPostsPage';
 import PageNotFound from './pages/errors/PageNotFound';
 
 
@@ -26,6 +27,11 @@ const router = new VueRouter({
             path: '/contacts',
             name: 'contacts',
             component: ContactsPage
+        },
+        {
+            path: '/posts/search',
+            name: 'searchPostsPage',
+            component: SearchPostsPage
         },
         {
             path: '/posts/:id',
