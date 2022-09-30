@@ -5,7 +5,8 @@ import ContactsPage from './pages/ContactsPage';
 import HomePage from './pages/HomePage';
 import SinglePost from './pages/SinglePost';
 import CategoriesIndexPage from './pages/CategoriesIndexPage';
-import CategoryPostsList from './pages/CategoryPostsList'
+import CategoryPostsList from './pages/CategoryPostsList';
+import PageNotFound from './pages/errors/PageNotFound';
 
 
 const router = new VueRouter({
@@ -40,6 +41,11 @@ const router = new VueRouter({
             path: '/categories/:id',
             name: 'categoryPostsList',
             component: CategoryPostsList
+        },
+        {
+            path: '*',
+            name: 'pageNotFound',
+            component: PageNotFound
         },
     ]
 });
