@@ -7,7 +7,9 @@
                     <router-link class="nav-link active" to="/about">About us</router-link>
                     <router-link class="nav-link active" to="/contacts">Contact us</router-link>
                     <router-link class="nav-link active" to="/categories">Categories</router-link>
-
+                    <router-link class="btn btn-success" to="/posts/search/">
+                        Search posts
+                    </router-link>
                 </div>
             </div>
         </nav>

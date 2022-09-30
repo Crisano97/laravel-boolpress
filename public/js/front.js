@@ -2359,7 +2359,12 @@ var render = function render() {
     attrs: {
       to: "/categories"
     }
-  }, [_vm._v("Categories")])], 1)])])]);
+  }, [_vm._v("Categories")]), _vm._v(" "), _c("router-link", {
+    staticClass: "btn btn-success",
+    attrs: {
+      to: "/posts/search/"
+    }
+  }, [_vm._v("\n                    Search posts\n                ")])], 1)])])]);
 };
 
 var staticRenderFns = [];
