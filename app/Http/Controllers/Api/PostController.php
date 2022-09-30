@@ -114,17 +114,20 @@ class PostController extends Controller
     }
 
     public function searchPosts($title){
-        $post = Post::with('category', 'user')->where('title', $title)->get();
-        if (substr($post->post_image, 0, 4) != 'http') {
-            $post->post_image = '/storage/' . $post->post_image;
+        $title = strtolower($title);
+        $posts = Post::with('category', 'user')->where('title', 'LIKE' , '%' . $title . '%')->get();
+        foreach ($posts as $post) {
+            if (substr($post->post_image, 0, 4) != 'http') {
+                $post->post_image = '/storage/' . $post->post_image;
+            }
         }
-        if ($post) {
+        if (count($posts) > 0) {
             return response()->json([
                 'response' => true,
-                'results' => $post
+                'results' => $posts
             ]);
         }
         
-        else return response('', 404);
+        else return response('', 204);
     }
 }
