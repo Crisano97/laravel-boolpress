@@ -24,8 +24,7 @@ export default {
     },
     data: function(){
         return{
-            posts: [],
-            categories: [],
+            posts: {},
             isLoading: true,
         }
     },

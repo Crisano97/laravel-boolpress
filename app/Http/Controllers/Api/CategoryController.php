@@ -15,7 +15,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::with('posts')->paginate(15);
+        $categories = Category::with('posts.user')->paginate(15);
         return response()->json([
             'response' => true,
             // 'count' => count($categories),
@@ -52,7 +52,7 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        $category = Category::with('posts')->find($id);
+        $category = Category::with('posts.user')->find($id);
         if ($category) {
             return response()->json([
                 'response' => true,

@@ -10,6 +10,8 @@
                     <router-link class="nav-link active" to="/">Home</router-link>
                     <router-link class="nav-link active" to="/about">About us</router-link>
                     <router-link class="nav-link active" to="/contacts">Contact us</router-link>
+                    <router-link class="nav-link active" to="/categories">Categories</router-link>
+
                 </div>
                 </div>
             </div>

@@ -4,6 +4,8 @@ import AboutPage from './pages/AboutPage';
 import ContactsPage from './pages/ContactsPage';
 import HomePage from './pages/HomePage';
 import SinglePost from './pages/SinglePost';
+import CategoriesIndexPage from './pages/CategoriesIndexPage';
+import CategoryPostsList from './pages/CategoryPostsList'
 
 
 const router = new VueRouter({
@@ -28,6 +30,16 @@ const router = new VueRouter({
             path: '/posts/:id',
             name: 'singlePost',
             component: SinglePost
+        },
+        {
+            path: '/categories',
+            name: 'categoriesIndexPage',
+            component: CategoriesIndexPage
+        },
+        {
+            path: '/categories/:id',
+            name: 'categoryPostsList',
+            component: CategoryPostsList
         },
     ]
 });
