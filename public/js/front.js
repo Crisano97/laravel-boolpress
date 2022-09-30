@@ -2286,13 +2286,8 @@ var render = function render() {
     staticClass: "navbar navbar-expand-lg bg-light"
   }, [_c("div", {
     staticClass: "container-fluid"
-  }, [_vm._m(0), _vm._v(" "), _c("div", {
-    staticClass: "collapse navbar-collapse",
-    attrs: {
-      id: "navbarNavAltMarkup"
-    }
   }, [_c("div", {
-    staticClass: "navbar-nav"
+    staticClass: "navbar"
   }, [_c("router-link", {
     staticClass: "nav-link active",
     attrs: {
@@ -2313,27 +2308,10 @@ var render = function render() {
     attrs: {
       to: "/categories"
     }
-  }, [_vm._v("Categories")])], 1)])])])]);
+  }, [_vm._v("Categories")])], 1)])])]);
 };
 
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("button", {
-    staticClass: "navbar-toggler",
-    attrs: {
-      type: "button",
-      "data-bs-toggle": "collapse",
-      "data-bs-target": "#navbarNavAltMarkup",
-      "aria-controls": "navbarNavAltMarkup",
-      "aria-expanded": "false",
-      "aria-label": "Toggle navigation"
-    }
-  }, [_c("span", {
-    staticClass: "navbar-toggler-icon"
-  })]);
-}];
+var staticRenderFns = [];
 render._withStripped = true;
 
 
