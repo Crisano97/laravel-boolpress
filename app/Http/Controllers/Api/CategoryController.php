@@ -53,6 +53,11 @@ class CategoryController extends Controller
     public function show($id)
     {
         $category = Category::with('posts.user')->find($id);
+        foreach ($category->posts as $post) {
+            if (substr($post->post_image, 0, 4) != 'http') {
+                $post->post_image = '/storage/' . $post->post_image;
+            }
+        }
         if ($category) {
             return response()->json([
                 'response' => true,
