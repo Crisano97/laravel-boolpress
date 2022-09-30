@@ -112,4 +112,19 @@ class PostController extends Controller
         Post::destroy($id);
         return response('', 204);
     }
+
+    public function searchPosts($title){
+        $post = Post::with('category', 'user')->where('title', $title)->get();
+        if (substr($post->post_image, 0, 4) != 'http') {
+            $post->post_image = '/storage/' . $post->post_image;
+        }
+        if ($post) {
+            return response()->json([
+                'response' => true,
+                'results' => $post
+            ]);
+        }
+        
+        else return response('', 404);
+    }
 }
